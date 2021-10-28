@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
@@ -12,7 +12,7 @@ export default function Home() {
   useEffect(()=>{
     if (typeof window !== 'undefined') {
       setSize(window.innerWidth);
-    }
+    };
   },[])
   //
   
@@ -31,7 +31,7 @@ export default function Home() {
             MOORIM T.C.
           </div>
           <div style={{textAlign: 'center', fontSize : size > 800 ? '1.6rem' : '0.8rem', marginBottom:'1rem'}}>
-            "Your Best Engineering Partner"
+            &ldquo;Your Best Engineering Partner&rdquo;
           </div>
         </div>
 
