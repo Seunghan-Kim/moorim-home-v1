@@ -2,9 +2,6 @@ import { useState, useEffect } from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import HorizontalScroll from'../components/horizontal-scroll-function'
-
-const favoriteList = [{key : 1, value :'a'}, {key : 2, value:'b'},{key : 3, value:'c'}]
 
 export default function Home() {
   
@@ -41,14 +38,14 @@ export default function Home() {
           <a href="https://nextjs.org/docs"
              className={styles.card}
              style={{ marginLeft : size > 800 ? '1rem' : '0rem', marginRight : size > 800 ? '1rem' : '0rem' }}>
-            <h2>Machine Learning &rarr;</h2>
+            <h2>1 Machine Learning &rarr;</h2>
             <p>Find in-depth information about Next.js features and API.</p>
           </a>
 
           <a href="https://nextjs.org/learn" 
              className={styles.card}
              style={{ marginLeft : size > 800 ? '1rem' : '0rem', marginRight : size > 800 ? '1rem' : '0rem' }}>
-            <h2>Vibration & Noise Solution &rarr;</h2>
+            <h2>2 Vibration & Noise Solution &rarr;</h2>
             <p>Learn about Next.js in an interactive course with quizzes!</p>
           </a>
 
@@ -57,7 +54,7 @@ export default function Home() {
             className={styles.card}
             style={{ marginLeft : size > 800 ? '1rem' : '0rem', marginRight : size > 800 ? '1rem' : '0rem' }}
           >
-            <h2>Test Solutions &rarr;</h2>
+            <h2>3 Test Solutions &rarr;</h2>
             <p>Discover and deploy boilerplate example Next.js projects.</p>
           </a>
 
@@ -66,15 +63,33 @@ export default function Home() {
             className={styles.card}
             style={{ marginLeft : size > 800 ? '1rem' : '0rem', marginRight : size > 800 ? '1rem' : '0rem' }}
           >
-            <h2>Examples &rarr;</h2>
+            <h2>4 Examples &rarr;</h2>
             <p>
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
+
+          <a href="https://nextjs.org/docs"
+             className={styles.card}
+             style={{ marginLeft : size > 800 ? '1rem' : '0rem', marginRight : size > 800 ? '1rem' : '0rem' }}>
+            <h2>5 Machine Learning  &rarr;</h2>
+            <p>Find in-depth information about Next.js features and API.</p>
+          </a>
+
+          <a href="https://nextjs.org/docs"
+             className={styles.card}
+             style={{ marginLeft : size > 800 ? '1rem' : '0rem', marginRight : size > 800 ? '1rem' : '0rem' }}>
+            <h2>6 Machine Learning &rarr;</h2>
+            <p>Find in-depth information about Next.js features and API.</p>
+          </a>
+
         </div>
       </main>
 
       <footer className={styles.footer}>
+        <div className={styles.footerDesc}>
+          무림티씨 / 서울시 양천구 목동서로 / shkim@moorim-tc.com
+        </div>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"

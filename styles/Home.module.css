@@ -15,11 +15,17 @@
 
 .footer {
   display: flex;
+  flex-direction: column;
   flex: 1;
-  padding: 2rem 0;
+  padding: 1rem 0;
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
+}
+
+.footerDesc {
+  font-size: 0.7rem;
+  margin-bottom: 0.4rem;
 }
 
 .footer a {
@@ -27,6 +33,7 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+  font-size: 0.8rem;
 }
 
 .title a {
@@ -92,11 +99,8 @@
   border-radius: 5px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 330px;
-  height : 200px
-}
-
-.cardsContainer {
-  margin-bottom: 1rem;
+  height : 200px;
+  box-shadow: 5px 5px 5px red;
 }
 
 .card:hover,
