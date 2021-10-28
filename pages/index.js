@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react'
+import Link from 'next/link'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
@@ -35,13 +36,13 @@ export default function Home() {
         </div>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs"
-             className={styles.card}
-             style={{ marginLeft : size > 800 ? '1rem' : '0rem', marginRight : size > 800 ? '1rem' : '0rem' }}>
-            <h2>1 Machine Learning &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
+          <Link href="/category/ai_solution">
+            <a className={styles.card}
+              style={{ marginLeft : size > 800 ? '1rem' : '0rem', marginRight : size > 800 ? '1rem' : '0rem' }}>
+              <h2>1 Machine Learning &rarr;</h2>
+              <p>Find in-depth information about Next.js features and API.</p>
+            </a>
+          </Link>
           <a href="https://nextjs.org/learn" 
              className={styles.card}
              style={{ marginLeft : size > 800 ? '1rem' : '0rem', marginRight : size > 800 ? '1rem' : '0rem' }}>
@@ -76,13 +77,14 @@ export default function Home() {
             <p>Find in-depth information about Next.js features and API.</p>
           </a>
 
-          <a href="https://nextjs.org/docs"
-             className={styles.card}
-             style={{ marginLeft : size > 800 ? '1rem' : '0rem', marginRight : size > 800 ? '1rem' : '0rem' }}>
-            <h2>6 Machine Learning &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
+          <Link href="/category/ai_solution">
+            <a href="https://nextjs.org/docs"
+              className={styles.card}
+              style={{ marginLeft : size > 800 ? '1rem' : '0rem', marginRight : size > 800 ? '1rem' : '0rem' }}>
+              <h2>6 Machine Learning &rarr;</h2>
+              <p>Find in-depth information about Next.js features and API.</p>
+            </a>
+          </Link>
         </div>
       </main>
 
