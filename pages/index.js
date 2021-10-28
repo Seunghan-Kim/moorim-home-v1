@@ -1,8 +1,23 @@
+import { useState, useEffect, useRef } from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
+
 export default function Home() {
+  
+  // Move to lib, future
+  const [size, setSize] = useState(0);
+
+  useEffect(()=>{
+    if (typeof window !== 'undefined') {
+      setSize(window.innerWidth);
+      console.log(size)
+    }
+  },[])
+  //
+  
+
   return (
     <div className={styles.container}>
       <Head>
@@ -12,25 +27,23 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          {/* Welcome to <a href="https://nextjs.org">Next.js!</a> */}
-          Welcome to MOORIM-TC
-        </h1>
-
-        <p className={styles.description}>
-          The Best Engineering Partner
-          {/* {' '} */}
-          {/* <code className={styles.code}>pages/index.js</code> */}
-        </p>
+        <div style={{flexDirection:'row', justifyContent:'space-between'}}>
+          <div className={styles.title} style={{fontSize : size > 800 ? '5rem' : '2.4rem'}}>
+            MOORIM T.C.
+          </div>
+          <div style={{textAlign: 'center', fontSize : size > 800 ? '1.6rem' : '0.8rem', marginBottom:'1rem'}}>
+            "Your Best Engineering Partner"
+          </div>
+        </div>
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
+            <h2>Machine Learning &rarr;</h2>
             <p>Find in-depth information about Next.js features and API.</p>
           </a>
 
           <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
+            <h2>Vibration & Noise Solution &rarr;</h2>
             <p>Learn about Next.js in an interactive course with quizzes!</p>
           </a>
 
@@ -38,7 +51,7 @@ export default function Home() {
             href="https://github.com/vercel/next.js/tree/master/examples"
             className={styles.card}
           >
-            <h2>Examples &rarr;</h2>
+            <h2>Test Solutions &rarr;</h2>
             <p>Discover and deploy boilerplate example Next.js projects.</p>
           </a>
 
@@ -46,7 +59,7 @@ export default function Home() {
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             className={styles.card}
           >
-            <h2>Deploy &rarr;</h2>
+            <h2>Examples &rarr;</h2>
             <p>
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
@@ -68,4 +81,37 @@ export default function Home() {
       </footer>
     </div>
   )
+}
+
+function useWindowSize() {
+  // Initialize state with undefined width/height so server and client renders match
+  // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
+  const [windowSize, setWindowSize] = useState({
+    width: undefined,
+    height: undefined,
+  });
+
+  useEffect(() => {
+    // only execute all the code below in client side
+    if (typeof window !== 'undefined') {
+      // Handler to call on window resize
+      function handleResize() {
+        // Set window width/height to state
+        setWindowSize({
+          width: window.innerWidth,
+          height: window.innerHeight,
+        });
+      }
+    
+      // Add event listener
+      window.addEventListener("resize", handleResize);
+     
+      // Call handler right away so state gets updated with initial window size
+      handleResize();
+    
+      // Remove event listener on cleanup
+      return () => window.removeEventListener("resize", handleResize);
+    }
+  }, []); // Empty array ensures that effect is only run on mount
+  return windowSize;
 }
