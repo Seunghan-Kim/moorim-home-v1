@@ -36,53 +36,58 @@ export default function Home() {
         </div>
 
         <div className={styles.grid}>
+
           <Link href="/category/ai_solution">
             <a className={styles.card}
               style={{ marginLeft : size > 800 ? '1rem' : '0rem', marginRight : size > 800 ? '1rem' : '0rem' }}>
-              <h2>1 Machine Learning &rarr;</h2>
-              <p>Find in-depth information about Next.js features and API.</p>
+              <h2>AI Solution</h2>
+              <p>최신 AI 알고리즘을 활용, 문제 해결의 통찰을 얻을 수 있습니다.</p>
             </a>
           </Link>
-          <a href="https://nextjs.org/learn" 
-             className={styles.card}
-             style={{ marginLeft : size > 800 ? '1rem' : '0rem', marginRight : size > 800 ? '1rem' : '0rem' }}>
-            <h2>2 Vibration & Noise Solution &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-            style={{ marginLeft : size > 800 ? '1rem' : '0rem', marginRight : size > 800 ? '1rem' : '0rem' }}
-          >
-            <h2>3 Test Solutions &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+          <Link href="/category/eng_solution">
+            <a className={styles.card}
+              style={{ marginLeft : size > 800 ? '1rem' : '0rem', marginRight : size > 800 ? '1rem' : '0rem' }}>
+              <h2>Engineering Solution</h2>
+              <p>다양한 문제에 대한 엔지니어링 해결책을 제시해 드립니다</p>
+            </a>
+          </Link>
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            style={{ marginLeft : size > 800 ? '1rem' : '0rem', marginRight : size > 800 ? '1rem' : '0rem' }}
-          >
-            <h2>4 Examples &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+          <Link href="/category/test_solution">
+            <a className={styles.card}
+              style={{ marginLeft : size > 800 ? '1rem' : '0rem', marginRight : size > 800 ? '1rem' : '0rem' }}
+            >
+              <h2>Test Solutions</h2>
+              <p>전통적인 측정 장비로 계측하기 어려운 문제를 해결해 드립니다</p>
+            </a>
+          </Link>
 
-          <a href="https://nextjs.org/docs"
-             className={styles.card}
-             style={{ marginLeft : size > 800 ? '1rem' : '0rem', marginRight : size > 800 ? '1rem' : '0rem' }}>
-            <h2>5 Machine Learning  &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+          <Link href="/category/sw_solution">
+            <a className={styles.card}
+              style={{ marginLeft : size > 800 ? '1rem' : '0rem', marginRight : size > 800 ? '1rem' : '0rem' }}
+            >
+              <h2>S/W Solution</h2>
+              <p>
+                특화된 S/W를 이용해서 업무 효율을 획기적으로 증가 시켜보세요
+              </p>
+            </a>
+          </Link>
 
-          <Link href="/category/ai_solution">
+          <Link href="/category/training_program">
             <a href="https://nextjs.org/docs"
               className={styles.card}
               style={{ marginLeft : size > 800 ? '1rem' : '0rem', marginRight : size > 800 ? '1rem' : '0rem' }}>
-              <h2>6 Machine Learning &rarr;</h2>
-              <p>Find in-depth information about Next.js features and API.</p>
+              <h2>Training Program</h2>
+              <p>엔지니어를 위한 코딩 프로그램이 있습니다.</p>
+            </a>
+          </Link>
+
+          <Link href="/category/portfolio">
+            <a href="https://nextjs.org/docs"
+              className={styles.card}
+              style={{ marginLeft : size > 800 ? '1rem' : '0rem', marginRight : size > 800 ? '1rem' : '0rem' }}>
+              <h2>Portfolio</h2>
+              <p>무림티씨의 열정과 기술력이 담긴 결과물</p>
             </a>
           </Link>
         </div>
@@ -90,7 +95,7 @@ export default function Home() {
 
       <footer className={styles.footer}>
         <div className={styles.footerDesc}>
-          무림티씨 / 서울시 양천구 목동서로 / shkim@moorim-tc.com
+          무림티씨 / shkim@moorim-tc.com
         </div>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
@@ -100,6 +105,8 @@ export default function Home() {
           Powered by{' '}
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={54} height={12} />
+            {'    '}
+            <Image src="/google-2015-google-new-google-icon.svg" alt="google Logo" width={48} height={12} />
           </span>
         </a>
       </footer>

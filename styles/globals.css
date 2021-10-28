@@ -4,13 +4,18 @@
 }
 
 @font-face {
+  font-family: 'NanumSquareRoundL';
+  src: url('./fonts/NanumSquareRoundL.ttf') format('truetype');
+}
+
+@font-face {
   font-family: 'Ubuntu-Bold';
   src: url('./fonts/Ubuntu-Bold.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Ubuntu-Light';
-  src: url('./fonts/Ubuntu-Light.ttf') format('truetype');
+  font-family: 'Ubuntu-Regular';
+  src: url('./fonts/Ubuntu-Regular.ttf') format('truetype');
 }
 
 html,

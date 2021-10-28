@@ -3,12 +3,12 @@
 }
 
 .main {
-  min-height: 100vh;
+  min-height: 93vh;
   padding: 2rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   /* font-family: 'NanumSquareRoundB'; */
 }
@@ -98,9 +98,9 @@
   border: 1px solid #eaeaea;
   border-radius: 5px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 330px;
+  width: 330px;
   height : 200px;
-  box-shadow: 5px 5px 5px red;
+  box-shadow: 5px 5px 5px #808080;
 }
 
 .card:hover,
@@ -108,17 +108,20 @@
 .card:active {
   color: #0070f3;
   border-color: #0070f3;
+  box-shadow: 1px 1px 3px #0070f3;
 }
 
 .card h2 {
   margin: 0 0 1rem 0;
   font-size: 1.5rem;
+  font-family: 'Ubuntu-Regular';
 }
 
 .card p {
   margin: 0;
-  font-size: 1.25rem;
+  font-size: 1.0rem;
   line-height: 1.5;
+  font-family: 'NanumSquareRoundL';
 }
 
 .logo {
