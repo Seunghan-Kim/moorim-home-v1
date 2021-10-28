@@ -4,7 +4,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import HorizontalScroll from'../components/horizontal-scroll-function'
 
-const favoriteList = [{key : '1', value :'a'}, {key : '2', value:'b'},{key : '2', value:'b'}]
+const favoriteList = [{key : 1, value :'a'}, {key : 2, value:'b'},{key : 3, value:'c'}]
 
 export default function Home() {
   
