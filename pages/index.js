@@ -38,27 +38,16 @@ export default function Home() {
         </div>
 
         <div className={styles.grid}>
-          <div className={styles.cardsContainer}>
-            <div className={styles.cardsTitle}>From Data to ML Model</div>
-            <HorizontalScroll data={favoriteList} />
-          </div>
-          <div className={styles.cardsContainer}>
-            <div className={styles.cardsTitle}>We Can Do,</div>
-            <HorizontalScroll data={favoriteList} />
-          </div>
-          <div className={styles.cardsContainer}>
-            <div className={styles.cardsTitle}>We've Done</div>
-            <HorizontalScroll data={favoriteList} />
-          </div>
-
-
-
-          <a href="https://nextjs.org/docs" className={styles.card}>
+          <a href="https://nextjs.org/docs"
+             className={styles.card}
+             style={{ marginLeft : size > 800 ? '1rem' : '0rem', marginRight : size > 800 ? '1rem' : '0rem' }}>
             <h2>Machine Learning &rarr;</h2>
             <p>Find in-depth information about Next.js features and API.</p>
           </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
+          <a href="https://nextjs.org/learn" 
+             className={styles.card}
+             style={{ marginLeft : size > 800 ? '1rem' : '0rem', marginRight : size > 800 ? '1rem' : '0rem' }}>
             <h2>Vibration & Noise Solution &rarr;</h2>
             <p>Learn about Next.js in an interactive course with quizzes!</p>
           </a>
@@ -66,6 +55,7 @@ export default function Home() {
           <a
             href="https://github.com/vercel/next.js/tree/master/examples"
             className={styles.card}
+            style={{ marginLeft : size > 800 ? '1rem' : '0rem', marginRight : size > 800 ? '1rem' : '0rem' }}
           >
             <h2>Test Solutions &rarr;</h2>
             <p>Discover and deploy boilerplate example Next.js projects.</p>
@@ -74,6 +64,7 @@ export default function Home() {
           <a
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             className={styles.card}
+            style={{ marginLeft : size > 800 ? '1rem' : '0rem', marginRight : size > 800 ? '1rem' : '0rem' }}
           >
             <h2>Examples &rarr;</h2>
             <p>
