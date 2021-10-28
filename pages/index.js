@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import HorizontalScrollTop30 from'../components/hScroll'
+import HorizontalScroll from'../components/horizontal-scroll-function'
 
-const favoriteList = [{key : '1', value :'a'}, {key : '2', value:'b'},{key : '2', value:'b'}, {key : '2', value:'b'}, {key : '2', value:'b'}, {key : '2', value:'b'}]
+const favoriteList = [{key : '1', value :'a'}, {key : '2', value:'b'},{key : '2', value:'b'}]
 
 export default function Home() {
   
@@ -28,7 +28,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <div style={{flexDirection:'row', justifyContent:'space-between'}}>
+        <div>
           <div className={styles.title} style={{fontSize : size > 800 ? '5rem' : '2.4rem'}}>
             MOORIM T.C.
           </div>
@@ -38,6 +38,21 @@ export default function Home() {
         </div>
 
         <div className={styles.grid}>
+          <div className={styles.cardsContainer}>
+            <div className={styles.cardsTitle}>From Data to ML Model</div>
+            <HorizontalScroll data={favoriteList} />
+          </div>
+          <div className={styles.cardsContainer}>
+            <div className={styles.cardsTitle}>We Can Do,</div>
+            <HorizontalScroll data={favoriteList} />
+          </div>
+          <div className={styles.cardsContainer}>
+            <div className={styles.cardsTitle}>We've Done</div>
+            <HorizontalScroll data={favoriteList} />
+          </div>
+
+
+
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h2>Machine Learning &rarr;</h2>
             <p>Find in-depth information about Next.js features and API.</p>
@@ -66,8 +81,6 @@ export default function Home() {
             </p>
           </a>
         </div>
-
-        <HorizontalScrollTop30 data={favoriteList} />
       </main>
 
       <footer className={styles.footer}>

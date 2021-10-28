@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from '../styles/Card.module.css';
+import styles from '../styles/hScrollCard.module.css';
 
-function ColorCardCorr({ num, value }) {
+function Card({ num, value }) {
   
   return (
     <div className={styles.colorCard}>
@@ -10,4 +10,4 @@ function ColorCardCorr({ num, value }) {
   );
 }
 
-export default ColorCardCorr;
+export default Card;

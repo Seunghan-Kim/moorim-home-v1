@@ -1,16 +1,16 @@
 import React from 'react';
 
-import ScrollBox from './ScrollBox';
-import ColorCard from './ColorCard';
+import ScrollBox from './horizontal-scroll-container';
+import Card from './horizontal-scroll-card';
 
 
-const HorizontalScrollTop30 = ({data}) => {
+const HorizontalScroll = ({data}) => {
 
   return(      
       <ScrollBox>
         {data.map((v, i) => {
           return(
-          <ColorCard 
+          <Card 
             key={v.key + i}
             num={i}
             value={v.value}
@@ -22,4 +22,4 @@ const HorizontalScrollTop30 = ({data}) => {
   ) 
 }
 
-export default HorizontalScrollTop30;
+export default HorizontalScroll;

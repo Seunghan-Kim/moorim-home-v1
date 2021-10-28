@@ -3,7 +3,7 @@
     /* position: relative; */
     width: 98.5%;
     overflow: hidden;
-    padding-left:0.4rem;
+    /* padding-left:0.4rem; */
   }
   
 .scrollboxwrapper {
@@ -15,10 +15,10 @@
   -ms-overflow-style: none; /* IE */
   overflow: -moz-scrollbars-none;
   /* background-color: rgb(50,114,78); */
-  background-color: rgb(242, 240, 235);
+  /* background-color: rgb(242, 240, 235); */
   opacity : 0.8;
   border-radius: 5px;
-  padding: 0.2rem;
+  padding-top: 0.2rem;
 }
 
 .scrollboxwrapper::-webkit-scrollbar {

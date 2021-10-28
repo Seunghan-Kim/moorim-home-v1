@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import PropTypes from 'prop-types';
-import useScrollBox from './UseScrollBox'
-import styles from '../styles/Scroll.module.css';
+import useScrollBox from './horizontal-scroll-motionFunction'
+import styles from '../styles/hScrollContainer.module.css';
 
 function ScrollBox({ children }) {
   const scrollWrapperRef = useRef();
