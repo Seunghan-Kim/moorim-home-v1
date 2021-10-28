@@ -1,9 +1,25 @@
+@font-face {
+  font-family: 'NanumSquareRoundB';
+  src: url('./fonts/NanumSquareRoundB.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Ubuntu-Bold';
+  src: url('./fonts/Ubuntu-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Ubuntu-Light';
+  src: url('./fonts/Ubuntu-Light.ttf') format('truetype');
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif, NanumSquareRoundB;
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif, NanumSquareRoundB; */
+  font-family: NanumSquareRoundB;
 }
 
 a {
@@ -13,9 +29,4 @@ a {
 
 * {
   box-sizing: border-box;
-}
-
-@font-face {
-  font-family: 'NanumSquareRoundB';
-  src: url('./fonts/NanumSquareRoundB.ttf') format('truetype');
 }

@@ -30,7 +30,7 @@ export default function Home() {
           <div className={styles.title} style={{fontSize : size > 800 ? '5rem' : '2.4rem'}}>
             MOORIM T.C.
           </div>
-          <div style={{textAlign: 'center', fontSize : size > 800 ? '1.6rem' : '0.8rem', marginBottom:'1rem'}}>
+          <div style={{textAlign: 'center', fontSize : size > 800 ? '1.6rem' : '0.8rem', marginBottom:'1rem', fontFamily: 'Ubuntu-Light'}}>
             &ldquo;Your Best Engineering Partner&rdquo;
           </div>
         </div>
