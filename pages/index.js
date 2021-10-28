@@ -2,7 +2,9 @@ import { useState, useEffect } from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import HorizontalScrollTop30 from'../components/hScroll'
 
+const favoriteList = [{key : '1', value :'a'}, {key : '2', value:'b'},{key : '2', value:'b'}, {key : '2', value:'b'}, {key : '2', value:'b'}, {key : '2', value:'b'}]
 
 export default function Home() {
   
@@ -64,6 +66,8 @@ export default function Home() {
             </p>
           </a>
         </div>
+
+        <HorizontalScrollTop30 data={favoriteList} />
       </main>
 
       <footer className={styles.footer}>
