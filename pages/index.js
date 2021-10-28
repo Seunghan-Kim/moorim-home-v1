@@ -106,7 +106,7 @@ export default function Home() {
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={54} height={12} />
             {'    '}
-            <Image src="/google-2015-google-new-google-icon.svg" alt="google Logo" width={48} height={12} />
+            <Image src="/google-2015-google-new-google-icon.svg" alt="google Logo" width={36} height={12} />
           </span>
         </a>
       </footer>
