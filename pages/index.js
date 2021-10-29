@@ -32,16 +32,17 @@ export default function Home() {
           <div className={styles.title} style={{fontSize : size > 800 ? '5rem' : '2.4rem'}}>
             MOORIM T.C.
           </div>
-          <div style={{textAlign: 'center', fontSize : size > 800 ? '1.6rem' : '0.8rem', marginBottom:'1rem', fontFamily: 'Ubuntu-Light'}}>
+          <div style={{textAlign: 'center', fontSize : size > 800 ? '1.6rem' : '0.8rem', marginBottom:'1rem', fontFamily: 'Ubuntu-Light', color:'#c7c3c3'}}>
             &ldquo;Your Best Engineering Partner&rdquo;
           </div>
         </div>
 
         <div className={styles.grid}>
 
-          <MainCard size={size} link={`/category/ai_solution?size=${size}`}>            
+          <MainCard size={size} link={`/category/ai_solution?size=${size}`}>
             <h2>AI Solution</h2>
-            <p>최신 AI 알고리즘을 활용, 문제 해결의 통찰을 얻을 수 있습니다.</p>            
+            <p>최신 AI 알고리즘을 활용, 문제 해결의 통찰을 얻을 수 있습니다.</p>     
+            <Image src="/google-2015-google-new-google-icon.svg" alt="google Logo" width={36} height={12} />       
           </MainCard>
 
           <MainCard size={size} link={`/category/eng_solution?size=${size}`}>            
