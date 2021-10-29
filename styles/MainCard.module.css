@@ -14,19 +14,22 @@
     box-shadow: 2px 2px 3px #af4848;
   }
   
-  .card:hover,
-  .card:focus,
+  /* .card:hover, */
+  /* .card:focus, */
   .card:active {
-    color: #0070f3;
-    border-color: #0070f3;
-    box-shadow: 1px 1px 3px #0070f3;
+    /* color: #0070f3; */
+    /* border-color: #0070f3; */
+    /* box-shadow: 1px 1px 3px #0070f3; */
+    transform: scale(0.98);
   }
+
+
   
   .card h2 {
     color:#282828;
     margin: 0 0 1rem 0;
     font-size: 1.5rem;
-    font-family: 'Ubuntu-Regular';
+    font-family: 'Ubuntu-Bold';
   }
   
   .card p {
