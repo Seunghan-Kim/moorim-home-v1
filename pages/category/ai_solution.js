@@ -1,9 +1,16 @@
 import Carrier from "../../components/cat_carrier"
+import { useRouter } from 'next/router'
 
 export default function AiSolution() {
 
+    const router = useRouter()
+
+    // console.log(router)
+    const size = router.query.size
+
+    console.log(size)
     return (
-        <Carrier header={"AI Solution"} >
+        <Carrier header={"AI Solution"} size={size}>
             <div style={{textAlign:'center'}}>
             &ldquo;머신러닝, 딥러닝과 같은 AI 알고리즘을 이용해 Engineering Insight를 얻을 수 있습니다.&rdquo;
             </div>

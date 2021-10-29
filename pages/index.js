@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 import Image from 'next/image'
+
+import MainCard from '../components/main_card'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -37,59 +39,36 @@ export default function Home() {
 
         <div className={styles.grid}>
 
-          <Link href="/category/ai_solution">
-            <a className={styles.card}
-              style={{ marginLeft : size > 800 ? '1rem' : '0rem', marginRight : size > 800 ? '1rem' : '0rem' }}>
-              <h2>AI Solution</h2>
-              <p>최신 AI 알고리즘을 활용, 문제 해결의 통찰을 얻을 수 있습니다.</p>
-            </a>
-          </Link>
+          <MainCard size={size} link={`/category/ai_solution?size=${size}`}>            
+            <h2>AI Solution</h2>
+            <p>최신 AI 알고리즘을 활용, 문제 해결의 통찰을 얻을 수 있습니다.</p>            
+          </MainCard>
 
-          <Link href="/category/eng_solution">
-            <a className={styles.card}
-              style={{ marginLeft : size > 800 ? '1rem' : '0rem', marginRight : size > 800 ? '1rem' : '0rem' }}>
-              <h2>Engineering Solution</h2>
-              <p>다양한 문제에 대한 엔지니어링 해결책을 제시해 드립니다</p>
-            </a>
-          </Link>
+          <MainCard size={size} link={`/category/eng_solution?size=${size}`}>            
+            <h2>Engineering Solution</h2>
+            <p>다양한 문제에 대한 엔지니어링 해결책을 제시해 드립니다</p>            
+          </MainCard>
 
-          <Link href="/category/test_solution">
-            <a className={styles.card}
-              style={{ marginLeft : size > 800 ? '1rem' : '0rem', marginRight : size > 800 ? '1rem' : '0rem' }}
-            >
-              <h2>Test Solutions</h2>
-              <p>전통적인 측정 장비로 계측하기 어려운 문제를 해결해 드립니다</p>
-            </a>
-          </Link>
+          <MainCard size={size} link={`/category/test_solution?size=${size}`}>            
+            <h2>Test Solution</h2>
+            <p>전통적인 측정 장비로 계측하기 어려운 문제를 해결해 드립니다</p>            
+          </MainCard>
 
-          <Link href="/category/sw_solution">
-            <a className={styles.card}
-              style={{ marginLeft : size > 800 ? '1rem' : '0rem', marginRight : size > 800 ? '1rem' : '0rem' }}
-            >
-              <h2>S/W Solution</h2>
-              <p>
-                특화된 S/W를 이용해서 업무 효율을 획기적으로 증가 시켜보세요
-              </p>
-            </a>
-          </Link>
+          <MainCard size={size} link={`/category/sw_solution?size=${size}`}>            
+            <h2>S/W Solution</h2>
+            <p>특화된 S/W를 이용해서 업무 효율을 획기적으로 증가 시켜보세요</p>            
+          </MainCard>
 
-          <Link href="/category/training_program">
-            <a href="https://nextjs.org/docs"
-              className={styles.card}
-              style={{ marginLeft : size > 800 ? '1rem' : '0rem', marginRight : size > 800 ? '1rem' : '0rem' }}>
-              <h2>Training Program</h2>
-              <p>엔지니어를 위한 코딩 프로그램이 있습니다.</p>
-            </a>
-          </Link>
+          <MainCard size={size} link={`/category/training_program?size=${size}`}>            
+            <h2>Training Program</h2>
+            <p>엔지니어를 위한 코딩 프로그램이 있습니다.</p>            
+          </MainCard>
 
-          <Link href="/category/portfolio">
-            <a href="https://nextjs.org/docs"
-              className={styles.card}
-              style={{ marginLeft : size > 800 ? '1rem' : '0rem', marginRight : size > 800 ? '1rem' : '0rem' }}>
-              <h2>Portfolio</h2>
-              <p>무림티씨의 열정과 기술력이 담긴 결과물</p>
-            </a>
-          </Link>
+          <MainCard size={size} link={`/category/portfolio?size=${size}`}>            
+            <h2>Portfolio</h2>
+            <p>무림티씨의 열정과 기술력이 담긴 결과물</p>            
+          </MainCard>
+
         </div>
       </main>
 
