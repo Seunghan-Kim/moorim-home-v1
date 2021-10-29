@@ -1,4 +1,4 @@
-import Carrier from "./cat_carrier"
+import Carrier from "../../components/cat_carrier"
 
 export default function SwSolution() {
 
