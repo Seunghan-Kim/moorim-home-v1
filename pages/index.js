@@ -67,7 +67,7 @@ export default function Home() {
               &bull;{' '}전통적인 계측 시스템을 이용한 각종 신호<br/>&nbsp;&nbsp;계측 서비스를 제공합니다.<br/>
               &bull;{' '}최신 무선센서와 모바일기기를 이용한 혁신<br/>&nbsp;&nbsp;적인 계측시스템 구성도 가능합니다.<br/>
             </p>    
-            <div style={{display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'center'}}>     
+            <div style={{display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'center', paddingTop:'0.2rem'}}>     
               <Image src="/bluetooth.png" alt="google Logo" width={72} height={18} />  {/* 3 */}
               <div style={{width:18}}></div>
               <Image src="/android.png" alt="google Logo" width={114} height={16} />  {/* 2.378 */}
@@ -80,7 +80,7 @@ export default function Home() {
               &bull;{' '}반복적이고 정형화된 데이터 처리 업무에<br/>&nbsp;&nbsp;특화된 S/W를 제작합니다.<br/>
               &bull;{' '}업무 효율성의 획기적 증가와 함께 데이터에<br/>&nbsp;&nbsp;대한 새로운 접근이 가능해집니다.
             </p>            
-            <div style={{display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'center'}}>     
+            <div style={{display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'center', paddingTop:'0.2rem'}}>     
               <Image src="/python.png" alt="google Logo" width={72} height={18} />  {/* 3 */}
               <div style={{width:18}}></div>
               <Image src="/javascript.png" alt="google Logo" width={42} height={18} />  {/* 2.378 */}
@@ -93,7 +93,7 @@ export default function Home() {
               &bull;{' '}엔지니어에게 특화된 실무적인 코딩 강의를<br/>&nbsp;&nbsp;제공합니다.<br/>
               &bull;{' '}코딩 강의를 통해 데이터 처리, 분석 및 시각<br/>&nbsp;&nbsp;화등이 가능하게 됩니다.
             </p>
-            <div style={{display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'center'}}>     
+            <div style={{display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'center', paddingTop:'0.2rem'}}>     
               <Image src="/python.png" alt="google Logo" width={72} height={18} />  {/* 3 */}
               <div style={{width:18}}></div>
               <Image src="/javascript.png" alt="google Logo" width={42} height={18} />  {/* 2.378 */}
