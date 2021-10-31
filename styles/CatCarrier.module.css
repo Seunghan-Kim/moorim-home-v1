@@ -26,17 +26,21 @@
 
 .childContainer {
     margin: 1rem 0rem;
+    line-height: 1.6;
     /* padding : 1rem 1rem; */
     /* border-bottom: 1px solid gray;
     border-top: 1px solid gray; */
 }
 
-.childContainer h2 {
+/* .childContainer h2 {
+    font-size: 1.0rem;
     margin: 1rem 1rem;
-    /* padding : 1rem 1rem; */
-    border-bottom: 1px solid gray;
-    border-top: 1px solid gray;
-}
+    padding : 0.6rem 0.4rem;
+    border-bottom: 1px solid #b4b4b4;
+    border-top: 1px solid #b4b4b4;
+    line-height: 1.6;
+    font-family: NanumSquareRoundR;
+} */
 
 .goBack {
     z-index: 10;

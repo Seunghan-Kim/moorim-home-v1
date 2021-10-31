@@ -1,0 +1,58 @@
+.smallContent{
+    font-size: 1.0rem;
+    margin: 1rem 1rem;
+    padding : 0.6rem 0.4rem;
+    border-bottom: 1px solid #b4b4b4;
+    border-top: 1px solid #b4b4b4;
+    
+}
+
+.subTitle {
+    font-size: 1.0rem;
+    font-family: NanumSquareRoundB;
+}
+
+.subTitleLast {
+    font-size: 1.0rem;
+    font-family: NanumSquareRoundB;
+    color: crimson;
+}
+
+.text {
+    margin-top: 0.4rem;
+    font-size: 0.8rem;
+    line-height: 1.6;
+    font-family: NanumSquareRoundR;
+}
+
+.examples {
+    margin-top: 0.4rem;
+    padding-left: 1rem;
+    font-size: 0.8rem;
+    font-family: NanumSquareRoundR;
+    color: #347eab;
+    line-height: 1.7;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1rem 0;
+    border-top: 1px solid #eaeaea;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footerDesc {
+    font-size: 0.7rem;
+    margin-bottom: 0.4rem;
+  }
+  
+  .footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    font-size: 0.8rem;
+  }

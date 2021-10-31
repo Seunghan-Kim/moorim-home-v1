@@ -9,6 +9,11 @@
 }
 
 @font-face {
+  font-family: 'NanumSquareRoundR';
+  src: url('./fonts/NanumSquareRoundR.ttf') format('truetype');
+}
+
+@font-face {
   font-family: 'Ubuntu-Bold';
   src: url('./fonts/Ubuntu-Bold.ttf') format('truetype');
 }
