@@ -1,6 +1,7 @@
-import Carrier from "../../components/cat_carrier"
-import { useRouter } from 'next/router'
+import Carrier from "../../components/cat_carrier";
+import { useRouter } from 'next/router';
 import styles from "../../styles/CatEach.module.css";
+import Image from 'next/image'
 
 export default function EngSolution() {
 
@@ -50,7 +51,23 @@ export default function EngSolution() {
                     &bull;&nbsp;모바일디바이스를 이용한 진동소음 측정 미 분석 시스템<br/>
                 </div>
             </div>
-
+            <footer className={styles.footer}>
+                <div className={styles.footerDesc}>
+                무림티씨 / shkim@moorim-tc.com
+                </div>
+                <a
+                href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                {/* Powered by{' '} */}
+                {/* <span className={styles.logo}> */}
+                    {/* <Image src="../vercel.svg" alt="Vercel Logo" width={54} height={12} /> */}
+                    {/* {'    '} */}
+                    {/* <Image src="/google-2015-google-new-google-icon.svg" alt="google Logo" width={36} height={12} /> */}
+                {/* </span> */}
+                </a>
+            </footer>
         </Carrier>
     )
 }

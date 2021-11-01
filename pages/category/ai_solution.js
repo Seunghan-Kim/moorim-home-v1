@@ -1,15 +1,13 @@
-import Carrier from "../../components/cat_carrier"
-import { useRouter } from 'next/router'
+import Carrier from "../../components/cat_carrier";
+import { useRouter } from 'next/router';
 import styles from "../../styles/CatEach.module.css";
+import Image from 'next/image'
 
 export default function AiSolution() {
 
     const router = useRouter()
-
-    // console.log(router)
     const size = router.query.size
 
-    console.log(size)
     return (
         <Carrier header={"AI Solution"} size={size}>
             <div style={{textAlign:'center', fontSize:'0.8rem'}}>
@@ -72,12 +70,12 @@ export default function AiSolution() {
                 target="_blank"
                 rel="noopener noreferrer"
                 >
-                Powered by{' '}
-                <span className={styles.logo}>
+                {/* Powered by{' '} */}
+                {/* <span className={styles.logo}> */}
                     {/* <Image src="../vercel.svg" alt="Vercel Logo" width={54} height={12} /> */}
                     {'    '}
                     {/* <Image src="/google-2015-google-new-google-icon.svg" alt="google Logo" width={36} height={12} /> */}
-                </span>
+                {/* </span> */}
                 </a>
             </footer>
         </Carrier>
