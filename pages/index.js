@@ -57,7 +57,7 @@ export default function Home() {
             <h2>Engineering Solution</h2>
             <p>
               &bull;{' '}진동, 소음 관련 Field 문제에 대한 기술적<br/>&nbsp;&nbsp;해결책을 제공합니다.<br/>
-              &bull;{' '}풍부한 경험과 최신 기법 사용을 통해 문제의<br/>&nbsp;&nbsp;시각화 및 해결 방안을 제시합니다. 
+              &bull;{' '}솔루션에 필요하다면 맞춤형 S/W 또는<br/>&nbsp;&nbsp; 디바이스 구축도 가능합니다 
             </p>            
           </MainCard>
 
