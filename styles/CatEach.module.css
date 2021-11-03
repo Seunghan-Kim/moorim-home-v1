@@ -20,16 +20,16 @@
 
 .text {
     margin-top: 0.4rem;
-    font-size: 0.8rem;
+    font-size: 1.0rem;
     line-height: 1.6;
-    font-family: NanumSquareRoundR;
+    font-family: NanumSquareR;
 }
 
 .examples {
     margin-top: 0.4rem;
     padding-left: 1rem;
-    font-size: 0.8rem;
-    font-family: NanumSquareRoundR;
+    font-size: 1.0rem;
+    font-family: NanumSquareR;
     color: #347eab;
     line-height: 1.7;
 }

@@ -27,8 +27,31 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <div style={{height:'3rem', position:'sticky', top:'0px', display:'flex', flexDirection:'row', alignItems:'center', backgroundColor:'white', zIndex:'10'}}>
+        
+        <Link href={'category/solutions'}>
+          <a>
+            Solutions
+          </a>
+        </Link>
+        
+        <Link href={`/category/portfolio?size=${size}`}>
+          <a style={{marginLeft:'2rem'}}>
+          Portfolio
+          </a>
+        </Link>
+      </div>
+
       <main className={styles.main}>
-        <div>
+        <div className={styles.companyHead}>
+          <Image 
+            className={styles.bg}
+            src="/d301.jpeg"
+            alt="bg"
+            layout="fill"
+            objectFit='cover'
+            objectPosition='center'
+          />
           <div className={styles.title} style={{fontSize : size > 800 ? '5rem' : '2.4rem'}}>
             MOORIM T.C.
           </div>
@@ -36,83 +59,76 @@ export default function Home() {
             &ldquo;Your Best Engineering Partner&rdquo;
           </div>
         </div>
-
-        <div className={styles.grid}>
-
-          <MainCard size={size} link={`/category/ai_solution?size=${size}`}>
-            <h2>AI Solution</h2>
-            <p>
-              &bull;{' '}최신 AI 알고리즘을 활용하여 효율적이고<br/>&nbsp;&nbsp;정확한 예측을 가능하게 합니다. <br/>
-              &bull;{' '}주요 Feature 분석을 통해 근본 원인을<br/>&nbsp;&nbsp;구체적으로 이해할 수 있습니다.
-            </p>
-            <div style={{display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'center'}}>     
-              <Image src="/google-2015-google-new-google-icon.svg" alt="google Logo" width={48} height={16} />  {/* 3 */}
-              <div style={{width:18}}></div>
-              <Image src="/catboost.png" alt="google Logo" width={76} height={32} />  {/* 2.378 */}
-              <Image src="/tensorflow.png" alt="google Logo" width={76} height={32} />  {/* 2.14 */}
+        
+        <div className={styles.contentsContainer}>
+          <div className={styles.textContainer}>
+            <div style={{paddingLeft:8, fontSize:24, marginBottom:8, color:'#1272CB', textAlign:'start'}}>
+              &ldquo;다재다능한,
             </div>
-          </MainCard>
-
-          <MainCard size={size} link={`/category/eng_solution?size=${size}`}>            
-            <h2>Engineering Solution</h2>
-            <p>
-              &bull;{' '}진동, 소음 관련 Field 문제에 대한 기술적<br/>&nbsp;&nbsp;해결책을 제공합니다.<br/>
-              &bull;{' '}솔루션에 필요하다면 맞춤형 S/W 또는<br/>&nbsp;&nbsp; 디바이스 구축도 가능합니다 
-            </p>            
-          </MainCard>
-
-          <MainCard size={size} link={`/category/test_solution?size=${size}`}>            
-            <h2>Test Solution</h2>
-            <p>
-              &bull;{' '}전통적인 계측 시스템을 이용한 각종 신호<br/>&nbsp;&nbsp;계측 서비스를 제공합니다.<br/>
-              &bull;{' '}최신 무선센서와 모바일기기를 이용한 혁신<br/>&nbsp;&nbsp;적인 계측시스템 구성도 가능합니다.<br/>
-            </p>    
-            <div style={{display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'center', paddingTop:'0.2rem'}}>     
-              <Image src="/bluetooth.png" alt="google Logo" width={72} height={18} />  {/* 3 */}
-              <div style={{width:18}}></div>
-              <Image src="/android.png" alt="google Logo" width={114} height={16} />  {/* 2.378 */}
-            </div>        
-          </MainCard>
-
-          <MainCard size={size} link={`/category/sw_solution?size=${size}`}>            
-            <h2>S/W Solution</h2>
-            <p>
-              &bull;{' '}반복적이고 정형화된 데이터 처리 업무에<br/>&nbsp;&nbsp;특화된 S/W를 제작합니다.<br/>
-              &bull;{' '}업무 효율성의 획기적 증가와 함께 데이터에<br/>&nbsp;&nbsp;대한 새로운 접근이 가능해집니다.
-            </p>            
-            <div style={{display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'center', paddingTop:'0.2rem'}}>     
-              <Image src="/python.png" alt="google Logo" width={72} height={18} />  {/* 3 */}
-              <div style={{width:18}}></div>
-              <Image src="/javascript.png" alt="google Logo" width={42} height={18} />  {/* 2.378 */}
-            </div>     
-          </MainCard>
-
-          <MainCard size={size} link={`/category/training_program?size=${size}`}>            
-            <h2>Training Program</h2>
-            <p>
-              &bull;{' '}엔지니어에게 특화된 실무적인 코딩 강의를<br/>&nbsp;&nbsp;제공합니다.<br/>
-              &bull;{' '}코딩 강의를 통해 데이터 처리, 분석 및 시각<br/>&nbsp;&nbsp;화등이 가능하게 됩니다.
-            </p>
-            <div style={{display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'center', paddingTop:'0.2rem'}}>     
-              <Image src="/python.png" alt="google Logo" width={72} height={18} />  {/* 3 */}
-              <div style={{width:18}}></div>
-              <Image src="/javascript.png" alt="google Logo" width={42} height={18} />  {/* 2.378 */}
-            </div>                 
-          </MainCard>
-
-          <div className={styles.portfolio}>
-            <Link href={'/category/portfolio'}>
-              <h2>Portfolio</h2>
-            </Link> 
+            <div style={{paddingRight:8, fontSize:24, marginBottom:16, color:'#1272CB', textAlign:'end'}}>
+              당신의 엔지니어링 파트너&rdquo;
+            </div>
+            <div style={{paddingLeft:10, fontSize:14, marginBottom:16, lineHeight:1.5, color:'#3E3D3D'}}>
+              NVH(Noise Vibration Harshness)전공<br/>
+              + 차량 NVH Engineering<br/>
+              ++ 차량 R&H Engineering<br/>
+              +++ Machine Learning & Coding Skill
+            </div>
+            <div style={{paddingLeft:10, fontSize:14, marginBottom:16, lineHeight:1.5}}>
+              무림티씨를 선택해야하는 이유
+            </div>
+            <div style={{paddingLeft:10, fontSize:14, marginBottom:16, lineHeight:1.5, color:'#3E3D3D'}}>
+              1. 폭넓은 경험에서 제공되는 수준높은 엔지니어링 서비스<br/>
+              2. 전통적인 계측, 분석기법부터 최신 AI알고리즘까지.<br/>
+              3. 끊임없는 연구개발을 통한 차별화된 서비스<br/>
+            </div>
           </div>
 
-          {/* <MainCard size={size} link={`/category/portfolio?size=${size}`}>            
-            <h2>Portfolio</h2>
-            <p>
-              저희 무림티씨에서 수행해왔던 과제를 소개합니다.
-            </p>            
-          </MainCard> */}
+          <div className={styles.grid}>    
 
+            <MainCard size={size} link={`/category/test_solution?size=${size}`}>            
+              <h2>Test Solution</h2>
+              <p>
+                신호계측 / 학습용 데이터셋 / 특수 계측시스템
+              </p>           
+            </MainCard>
+
+            <MainCard size={size} link={`/category/eng_solution?size=${size}`}>            
+              <h2>Engineering Solution</h2>
+              <p>
+                데이터분석 / 문제해결 / 성능개선
+              </p>            
+            </MainCard>
+
+            <MainCard size={size} link={`/category/ai_solution?size=${size}`}>
+              <h2>AI Solution</h2>
+              <p>
+                머신러닝 / 데이터 Eng. / Feature Eng.
+              </p>
+            </MainCard>
+
+            <MainCard size={size} link={`/category/sw_solution?size=${size}`}>            
+              <h2>S/W Solution</h2>
+              <p>
+                PC App. / Web App. / Mobile App.
+              </p>              
+            </MainCard>
+
+            <MainCard size={size} link={`/category/training_program?size=${size}`}>            
+              <h2>Training Program</h2>
+              <p>
+                Python / Javascript / FrameWorks
+              </p>              
+            </MainCard>
+
+            <MainCard size={size} link={`/category/portfolio?size=${size}`}> 
+              <h2>Portfolio</h2>
+              <p>
+                Testing / Engineering / S/W
+              </p>  
+            </MainCard>
+
+          </div>
         </div>
       </main>
 
