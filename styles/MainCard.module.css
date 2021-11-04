@@ -1,20 +1,16 @@
 .card {
     position: relative;
-    /* margin: 0.8rem; */
-    background-color: #5579ac;
-    /* background: rgb(8, 80, 114);
-    background: linear-gradient(90deg, rgba(62,61,61,1) 0%, rgba(62,61,61,1) 61%, rgba(0,212,255,1) 100%); */
+    /* background-color: rgba(245, 245, 245, 0.253); */
+    background-color: rgba(253,210,169, 0.1);
     padding: 1.0rem;
     text-align: left;
     color: inherit;
     text-decoration: none;
-    /* border: 1px solid #eaeaea; */
-    /* border-radius: 5px; */
-    border-radius: 10px;
     transition: color 0.15s ease, border-color 0.15s ease;
-    width: 350px;
+    width: 100%;
+    max-width: 400px;
     height : 90px;
-    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    /* box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.548), -5px -5px 5px rgba(0, 0, 0, 0.25); */
     
   }
   
@@ -29,13 +25,13 @@
   
   .card h2 {
     position: relative;
-    color:white;
+    color:black;
     margin: 0 0 1rem 0;
     font-size: 24px;
     font-family: 'Ubuntu-Regular';
     /* z-index: 10; */
     letter-spacing: 2px;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.65);
+    /* text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.65); */
   }
   
   .card p {
@@ -44,8 +40,8 @@
     font-size: 14px;
     line-height: 1.5;
     text-align: end;
-    font-family: 'NanumSquareR';
-    color: #F5F7B0;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+    /* font-family: 'NanumSquareRoundB'; */
+    color: #013d97;
+    /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75); */
     /* text-shadow: 1px 1px 3px white, -1px -1px white; */
   }

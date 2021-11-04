@@ -28,6 +28,11 @@
   src: url('./fonts/Ubuntu-Regular.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'NanumSquareB';
+  src: url('./fonts/NanumSquareB.ttf') format('truetype');
+}
+
 html,
 body {
   padding: 0;

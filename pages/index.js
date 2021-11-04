@@ -27,10 +27,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div style={{height:'3rem', position:'sticky', top:'0px', display:'flex', flexDirection:'row', alignItems:'center', backgroundColor:'white', zIndex:'10'}}>
+      <div style={{height:'3rem', position:'sticky', top:'0px', display:'flex', flexDirection:'row', alignItems:'center', backgroundColor:'rgba(237,20,61,0.95)', zIndex:'10', color:'white', fontFamily:'Ubuntu-Bold'}}>
         
         <Link href={'category/solutions'}>
-          <a>
+          <a style={{marginLeft:'2rem'}}>
             Solutions
           </a>
         </Link>
@@ -44,14 +44,14 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className={styles.companyHead}>
-          <Image 
+          {/* <Image 
             className={styles.bg}
             src="/d301.jpeg"
             alt="bg"
             layout="fill"
             objectFit='cover'
             objectPosition='center'
-          />
+          /> */}
           <div className={styles.title} style={{fontSize : size > 800 ? '5rem' : '2.4rem'}}>
             MOORIM T.C.
           </div>
@@ -62,25 +62,35 @@ export default function Home() {
         
         <div className={styles.contentsContainer}>
           <div className={styles.textContainer}>
-            <div style={{paddingLeft:8, fontSize:24, marginBottom:8, color:'#1272CB', textAlign:'start'}}>
+            <div style={{paddingLeft:8, fontSize:24, marginBottom:8, marginTop:16, color:'#013d97', textAlign:'start'}}>
               &ldquo;다재다능한,
             </div>
-            <div style={{paddingRight:8, fontSize:24, marginBottom:16, color:'#1272CB', textAlign:'end'}}>
+            <div style={{paddingRight:8, fontSize:24, marginBottom:'2rem', color:'#013d97', textAlign:'end'}}>
               당신의 엔지니어링 파트너&rdquo;
             </div>
-            <div style={{paddingLeft:10, fontSize:14, marginBottom:16, lineHeight:1.5, color:'#3E3D3D'}}>
-              NVH(Noise Vibration Harshness)전공<br/>
-              + 차량 NVH Engineering<br/>
-              ++ 차량 R&H Engineering<br/>
-              +++ Machine Learning & Coding Skill
+            <div style={{lineHeight:1.5, marginBottom:'2rem'}}>
+              <div style={{paddingLeft:10, fontSize:'1.2rem', marginBottom:16, lineHeight:1.5, color:'black'}}>NVH(Noise Vibration Harshness)전공</div>
+              <div style={{paddingLeft:14, fontSize:'1rem', marginBottom:8, lineHeight:1.5, color:'#3E3D3D'}}>+ 차량 NVH Engineering</div>
+              <div style={{paddingLeft:14, fontSize:'1rem', marginBottom:8, lineHeight:1.5, color:'#3E3D3D'}}>++ 차량 R&H Engineering</div>
+              <div style={{paddingLeft:14, fontSize:'1rem', marginBottom:8, lineHeight:1.5, color:'#3E3D3D'}}>+++ Machine Learning & Coding Skill</div>
             </div>
-            <div style={{paddingLeft:10, fontSize:14, marginBottom:16, lineHeight:1.5}}>
+            <div style={{paddingLeft:10, fontSize:'1.2rem', marginBottom:16, lineHeight:1.5, color:'black'}}>
               무림티씨를 선택해야하는 이유
             </div>
-            <div style={{paddingLeft:10, fontSize:14, marginBottom:16, lineHeight:1.5, color:'#3E3D3D'}}>
-              1. 폭넓은 경험에서 제공되는 수준높은 엔지니어링 서비스<br/>
-              2. 전통적인 계측, 분석기법부터 최신 AI알고리즘까지.<br/>
-              3. 끊임없는 연구개발을 통한 차별화된 서비스<br/>
+            <div style={{paddingLeft:12, fontSize:'1rem', marginBottom:16, lineHeight:1.5, display:'flex', flexDirection:'column'}}>
+              <div style={{display:'flex', flexDirection:'row'}}>
+                <div style={{fontSize:'1rem', color:'black', marginRight:'1rem', color:'#3E3D3D'}}>1.</div>
+                <div style={{color:'#3E3D3D', marginBottom:'0.5rem'}}>축적된 기술과 노하우로부터 제공되는 최상의 엔지니어링 서비스</div>
+              </div>
+              <div style={{display:'flex', flexDirection:'row'}}>
+                <div style={{fontSize:'1rem', color:'black', marginRight:'1rem', color:'#3E3D3D'}}>2.</div>
+                <div style={{color:'#3E3D3D', marginBottom:'0.5rem'}}>전통적인 계측, 분석기법부터 최신 AI알고리즘까지.</div>
+              </div>
+              <div style={{display:'flex', flexDirection:'row'}}>
+                <div style={{fontSize:'1rem', color:'black', marginRight:'1rem', color:'#3E3D3D'}}>3.</div>
+                <div style={{color:'#3E3D3D', marginBottom:'0.5rem'}}>H/W에서 S/W까지, 솔루션 도출에 필요한 모든 것을 한 번에.</div>
+              </div>
+              
             </div>
           </div>
 
